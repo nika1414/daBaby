@@ -2,20 +2,7 @@ function DaBaby() {
   document.getElementById("daBabyPic").style.display = "block";
   document.getElementById("ReloadP").style.display = "block";
   document.getElementById("letsGoo").style.display = "block";
-  DaBabyAudio();
-}
-
-function DaBabyAudio() {
   var audio = new Audio("audio/daBaby.mp3");
-  audio.oncanplaythrough = function () {
-    audio.play();
-    document.getElementById("daBabyButton").style.display = "none";
-    document.getElementById("lilPumpButton").style.display = "none";
-  };
-}
-
-function LilPumpAudio() {
-  var audio = new Audio("audio/lilPump.mp3");
   audio.oncanplaythrough = function () {
     audio.play();
     document.getElementById("daBabyButton").style.display = "none";
@@ -44,7 +31,12 @@ function ActualPump() {
   document.getElementById("daBabyPic").style.display = "none";
   document.getElementById("ReloadP").style.display = "none";
   document.getElementById("letsGoo").style.display = "none";
-  LilPumpAudio();
+  var audio = new Audio("audio/lilPump.mp3");
+  audio.oncanplaythrough = function () {
+    audio.play();
+    document.getElementById("daBabyButton").style.display = "none";
+    document.getElementById("lilPumpButton").style.display = "none";
+  };
 }
 
 // var daBabyAudio = document.getElementById("daBabyAudio");
