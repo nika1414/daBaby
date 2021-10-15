@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js"></script>
+    <title>daBaby</title>
+  </head>
+  <body>
+    <div class="dababyDiv">
+      <button
+        onclick="DaBaby()"
+        style="display: block"
+        id="daBabyButton"
+        class="daBabyButton"
+      >
+        Click to See daBaby
+      </button>
+      <img
+        id="daBabyPic"
+        class="daBabyPic"
+        src="images/dababy.png"
+        style="display: none"
+      />
+      <audio id="daBabyAudio" src="audio/daBaby.mp3" autoplay="false"></audio>
+      <p onclick="DoAgain()" id="ReloadP" class="ReloadP" style="display: none">
+        Reload<strong> web</strong> to do that again
+      </p>
+      <p id="letsGoo" class="letsGoo" style="display: none">Lets Gooo</p>
+    </div>
+    <div class="lilPumpDiv">
+      <button
+        onclick="FakePump()"
+        class="lilPumpButton"
+        id="lilPumpButton"
+        style="display: block"
+      >
+        Click to See lil Pump
+      </button>
+      <img
+        id="lilPumpPic"
+        class="lilPumpPic"
+        src="images/lilPump.png"
+        style="display: none"
+      />
+      <audio id="lilPumpAudio" src="audio/lilPump.mp3" autoplay="false"></audio>
+      <p
+        onclick="ActualPump()"
+        class="actualPump"
+        id="actualPump"
+        style="display: none"
+      >
+        Okay, Now to actually see Lil Pump
+      </p>
+    </div>
+  </body>
+</html>
