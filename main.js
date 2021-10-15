@@ -47,11 +47,5 @@ function ActualPump() {
   LilPumpAudio();
 }
 
-if (ActualPump()) {
-  FakePump().play();
-} else {
-  ActualPump().pause();
-}
-
 // var daBabyAudio = document.getElementById("daBabyAudio");
 // var lilPumpAudio = document.getElementById("lilPumpAudio");
