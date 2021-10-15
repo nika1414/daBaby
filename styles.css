@@ -1,5 +1,9 @@
 * {
   font-family: "Londrina Solid", cursive;
+  background-color: rgb(5, 8, 49);
+}
+strong {
+  background-color: transparent;
 }
 .daBabyButton {
   margin-left: 37%;
